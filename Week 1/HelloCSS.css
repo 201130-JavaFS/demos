@@ -1,0 +1,11 @@
+body {
+  background-color: lightblue;
+}
+
+div>span{
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  padding: 10px;
+}

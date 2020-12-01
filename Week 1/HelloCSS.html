@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WOW look AT ME!!!</title>
+    <link rel="stylesheet" href="HelloCSS.css">
+    <style>
+      th {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15mm;
+      }
+
+      td{
+        font-size: 10mm;
+      }
+
+      .favtable {
+        border: 3px dashed rebeccapurple;
+      } 
+
+      table {
+        border: 3px dashed rgb(98, 197, 32);
+      }
+      
+      table *{
+        border: 3px dashed rgb(98, 197, 32);
+      }
+
+      div>span{
+        color: darkmagenta;
+        } 
+    </style>
+  </head>
+  <body>
+    <p>Hello HTML World. </p><p>I just built a webpage. Yay!</p>
+
+    <div>
+      <span style="color: chartreuse; 
+      background-color: black;border-color: deeppink;padding: 5px 10px 25px;">
+      What is your favorite element?</span>
+      <span>Mine is a span.</span>
+    </div>
+
+    <br>
+    <br>
+    <table class="favtable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Favorite Tag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr> 
+          <td>Alex</td>
+          <td>Paragraphs (p)</td>
+        </tr>
+        <tr>
+          <td>Other Alex</td>
+          <td>Image (img)</td>
+        </tr>
+        <tr>
+          <td>John M.</td>
+          <td>Headers</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <h2 style="color:red;background-color:rosybrown">Tim's Favorite Tags:</h2>
+      <ol>
+        <li>Div</li>
+        <li>Anchor</li>
+        <li>Paragraphs</li>
+        <li>Some others:</li>
+          <ul>
+            <li>Span</li>
+            <li>Table</li>
+            <li>Button</li>
+          </ul>
+      </ol>
+    </div>
+
+    <br> 
+    <br>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="John Smith">
+      <br>
+      <label for="tag1">One of your favorite tags.</label>
+      <input type="text" id="tag1" name="tag1" placeholder="div">
+      <br>
+      <p>Choose how much you really like this tag</p>
+      <label for="radio1">1</label>
+      <input type="radio" id="radio1" name="radio" value="1">
+      <label for="radio2">2</label>
+      <input type="radio" id="radio2" name="radio" value="2">
+      <label for="radio3">3</label>
+      <input type="radio" id="radio3" name="radio" value="3">
+      <br>
+      <label for="Oradio1">1</label>
+      <input type="radio" id="Oradio1" name="other_radio" value="One">
+      <label for="Oradio2">2</label>
+      <input type="radio" id="Oradio2" name="other_radio" value="Two">
+      <label for="Oradio3">3</label>
+      <input type="radio" id="Oradio3" name="other_radio" value="Three">
+    </form>
+  </body>
+</html>

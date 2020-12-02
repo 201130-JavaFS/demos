@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>WOW look AT ME!!!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="HelloCSS.css">
     <style>
       th {
@@ -28,9 +29,13 @@
       div>span{
         color: darkmagenta;
         } 
+
+      div {
+         border: 7px black solid;
+      }
     </style>
   </head>
-  <body>
+  <body class="container-fluid">
     <p>Hello HTML World. </p><p>I just built a webpage. Yay!</p>
 
     <div>
@@ -42,7 +47,7 @@
 
     <br>
     <br>
-    <table class="favtable">
+    <table class="favtable table table-hover">
       <thead>
         <tr>
           <th>Name</th>
@@ -104,5 +109,18 @@
       <label for="Oradio3">3</label>
       <input type="radio" id="Oradio3" name="other_radio" value="Three">
     </form>
+
+    <div class="row">
+      <div class="col-sm-3">I'm just a div</div>
+      <div class="col-sm-3">I'm just another div</div>
+      <div class="col-sm-6">I'm a SUPER div!</div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </body>
 </html>

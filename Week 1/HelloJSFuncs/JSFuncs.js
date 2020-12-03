@@ -81,3 +81,48 @@ function testScope() {
 
 testScope();
 //console.log(e); e is out of scope so this causes a reference error. 
+
+//Closure
+console.log("================================================================");
+
+function adder(x) {
+  return function (y){
+    return x+y;
+  }
+}
+
+
+// function (y){
+//   return 5+y;
+// }
+
+//add5 can never change x value
+let add5 = adder(5); 
+
+let add9 = adder(9);
+
+//add5 = adder(12)
+
+console.log(add5(7));
+
+let HelloName = function (name){
+  return function (){
+    console.log("Hello "+name+", it is good to meet you!");
+  }
+} 
+
+let nameTim = HelloName("Tim");
+
+nameTim(); 
+
+
+HelloName = HelloName("Luke"); 
+//now we can never change the name value from Luke
+
+
+HelloName(); 
+
+let nameJohn = HelloName("John"); 
+
+nameJohn(); 
+

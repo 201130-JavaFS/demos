@@ -11,7 +11,7 @@ async function getData() {
   let response = await fetch(api+userInput+'/'); 
 
   if(response.status === 200){
-    let data = response.json();
+    let data = await response.json();
     populateData(data);
   } else {
     document.getElementById('data').innerHTML = "It got away!";

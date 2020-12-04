@@ -1,8 +1,17 @@
-//Get the HTML img element
+//Get the HTML elements
 let pokepic = document.getElementById("pokepic");
+let pokename = document.getElementById('pokename');
+let poketype = document.getElementById('poketype');
+let pokenum = document.getElementById('pokenum');
+
+//set event listener for button click.
+let button = document.getElementById('btn');
+button.addEventListener("click", ajaxFunc);
+
+
 
 function ajaxFunc(){
-  let num = 151; 
+  let num = document.getElementById('field').value; 
 
   let xhr = new XMLHttpRequest(); 
 
@@ -12,7 +21,7 @@ function ajaxFunc(){
       let data = JSON.parse(xhr.responseText)
 
       //Gets the values for the picture location from the object. Looked at PokeAPI documentation to find. 
-      pokepic.setAttribute("src", data.sprites.front_default);
+      renderHTML(data); 
     }
   }
 
@@ -20,4 +29,12 @@ function ajaxFunc(){
   xhr.send();
 }
 
-ajaxFunc();
+function renderHTML(data) {
+  pokepic.setAttribute("src", data.sprites.front_default);
+  pokename.innerText = data.name;
+  pokenum.innerText = data.id; 
+  poketype.innerText = data.types[0].type.name;
+  if(data.types[1]){
+    poketype.append(", "+data.types[1].type.name);
+  }
+}

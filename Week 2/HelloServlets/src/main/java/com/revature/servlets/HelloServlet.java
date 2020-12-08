@@ -24,6 +24,13 @@ public class HelloServlet extends HttpServlet{
 		//A print writer created from the response will write to that response object. We can use this to write HTML directly
 		PrintWriter pw = res.getWriter();
 		pw.print("<h1>Hello from your doGet method</h1>");
+		res.setStatus(202);
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
+		PrintWriter pw = res.getWriter();
+		pw.print("<h1>Hello from your doPost method</h1>");
 		res.setStatus(200);
 	}
 

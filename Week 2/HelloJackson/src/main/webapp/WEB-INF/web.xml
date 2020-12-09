@@ -9,4 +9,15 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<display-name>DinoServlet</display-name>
+  	<servlet-name>DinoServlet</servlet-name>
+  	<servlet-class>com.revature.web.DinoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DinoServlet</servlet-name>
+  	<url-pattern>/dinos</url-pattern>
+  </servlet-mapping>
 </web-app>

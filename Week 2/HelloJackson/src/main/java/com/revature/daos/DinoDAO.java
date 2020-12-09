@@ -18,5 +18,19 @@ public class DinoDAO {
 	public Dinosaur getDinoById(int id) {
 		return dinoArray[id-1];
 	}
+
+	public void inputDino(Dinosaur dino) {
+		Dinosaur[] newArr = new Dinosaur[dinoArray.length+1];
+		
+		for(int i = 0; i<dinoArray.length; ++i) {
+			newArr[i] = dinoArray[i];
+		}
+		
+		dino.setId(newArr.length);
+		
+		newArr[dinoArray.length] = dino;
+		
+		dinoArray = newArr;
+	}
 	
 }

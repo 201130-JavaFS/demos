@@ -18,6 +18,6 @@
   
   <servlet-mapping>
   	<servlet-name>DinoServlet</servlet-name>
-  	<url-pattern>/dinos</url-pattern>
+  	<url-pattern>/dinos/*</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.daos.DinoDAO;
 import com.revature.models.Dinosaur;
@@ -45,5 +46,11 @@ public class DinoService {
 		Dinosaur dino = om.readValue(body, Dinosaur.class);
 		
 		dd.inputDino(dino);
+	}
+
+	public void getOneDino(HttpServletResponse res, int id) throws IOException {
+		Dinosaur dino = dd.getDinoById(id);
+		String json = om.writeValueAsString(dino);
+		res.getWriter().print(json);
 	}
 }

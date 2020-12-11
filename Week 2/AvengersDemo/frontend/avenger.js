@@ -23,7 +23,6 @@ async function loginFunc() {
 
   if(resp.status===200){
     document.getElementById('login-row').innerText="YOU HAVE LOGGED IN";  
-    await assembleFunc();
   }else{
     document.getElementById('login-row').innerText="Login failed! Reload the page of the computer will explode!"; 
   }

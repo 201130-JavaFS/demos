@@ -1,0 +1,11 @@
+2020-08-11 11:32:53 INFO  Driver:12 - The application has started
+2020-08-11 11:32:53 ERROR Driver:18 - Oh no! We encountered an error!
+2020-08-11 11:32:53 INFO  Driver:21 - The application is ending
+2020-08-11 11:33:28 INFO  Driver:12 - The application has started
+2020-08-11 11:33:28 ERROR Driver:18 - Oh no! We encountered an error!
+2020-08-11 11:33:28 INFO  Driver:21 - The application is ending
+2020-08-12 10:28:35 INFO  Driver:17 - The application has started
+2020-08-12 10:28:35 INFO  AccountService:16 - I am accessing account 1 from the service.
+2020-08-12 10:28:35 INFO  AccountDAO:16 - I am in the DAO getting account number 1
+2020-08-12 10:28:35 INFO  Driver:28 - We have found account 1: Account [balance=500.35, type=Savings]
+2020-08-12 10:28:35 INFO  Driver:31 - The application is ending

@@ -15,7 +15,7 @@ public class ConnectionUtil {
 		e.printStackTrace();
 	}
 	
-	String url = "jdbc:postgresql://localhost:5432/shield";
+	String url = "jdbc:postgresql://javafs201130.cvtq9j4axrge.us-east-1.rds.amazonaws.com:5432/postgres";
 	String username = "postgres";
 	String password = "password"; 
 	

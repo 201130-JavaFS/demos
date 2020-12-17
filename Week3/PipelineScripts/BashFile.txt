@@ -1,0 +1,411 @@
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/Desktop
+$ cd
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ pwd
+/c/Users/TimothyGattie
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ cd Desktop/
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/Desktop
+$ cd ..
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ cd ..
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 /c/Users
+$ cd
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ pwd
+/c/Users/TimothyGattie
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ cd ..
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 /c/Users
+$ cd ..
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 /c
+$ cd
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ pwd
+/c/Users/TimothyGattie
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ DDL_DML_Rocp.sql
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Hello,java
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ getting-started/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ ls -la
+total 8225
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 16 10:36  ./
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 29 12:15  ../
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096      57 Apr  9  2020  .angular-config.json
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096    9633 Dec 16 09:54  .bash_history
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:27  .config/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 16 08:56  .docker/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:27  .eclipse/
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096      53 Nov  5 09:36  .git-for-windows-updater
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096      56 Mar 25  2020  .gitconfig
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:27  .lemminx/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:28  .m2/
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096      65 May 13  2020  .pgAdmin4.1057243102.addr
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096       0 May 13  2020  .pgAdmin4.1057243102.log
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096    1583 May 13  2020  .pgAdmin4.startup.log
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:28  .sonarlint/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:28  .ssh/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:28  .sts4/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:28  .tooling/
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096   11236 Dec 16 10:36  .viminfo
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:28  .vscode/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 07:31 '3D Objects'/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Nov 23  2019  AppData/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      38 Oct 28 10:07 'Application Data' -> /c/Users/TimothyGattie/AppData/Roaming/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 07:31  Contacts/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      66 Oct 28 10:07  Cookies -> /c/Users/TimothyGattie/AppData/Local/Microsoft/Windows/INetCookies/
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096    1269 Jul  9 10:08  DDL_DML_Rocp.sql
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 16 08:11  Desktop/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 16 07:56  Documents/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 16 15:34  Downloads/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 07:31  Favorites/
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096       0 Jun 29 14:54  Hello,java
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 16 07:56  IntelGraphicsProfiles/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 07:31  Links/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      36 Oct 28 10:07 'Local Settings' -> /c/Users/TimothyGattie/AppData/Local/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Nov 23  2019  MicrosoftEdgeBackups/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 07:31  Music/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      32 Oct 28 10:07 'My Documents' -> /c/Users/TimothyGattie/Documents/
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096 5505024 Dec 11 18:33  NTUSER.DAT
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096   65536 Nov  4 18:58  NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096  524288 Oct 28 10:07  NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096  524288 Oct 28 10:07  NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      74 Oct 28 10:07  NetHood -> '/c/Users/TimothyGattie/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Nov 23  2019  OneDrive/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 16:38  Pictures/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:49  Postman/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      74 Oct 28 10:07  PrintHood -> '/c/Users/TimothyGattie/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      63 Oct 28 10:07  Recent -> /c/Users/TimothyGattie/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 07:31 'Saved Games'/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 07:31  Searches/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      63 Oct 28 10:07  SendTo -> /c/Users/TimothyGattie/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      67 Oct 28 10:07 'Start Menu' -> '/c/Users/TimothyGattie/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 AzureAD+TimothyGattie 4096      66 Oct 28 10:07  Templates -> /c/Users/TimothyGattie/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Dec 14 07:31  Videos/
+drwxr-xr-x 1 AzureAD+TimothyGattie 4096       0 Oct 28 10:49  getting-started/
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096 1316864 Oct 28 10:07  ntuser.dat.LOG1
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096  327680 Oct 28 10:07  ntuser.dat.LOG2
+-rw-r--r-- 1 AzureAD+TimothyGattie 4096      20 Nov 23  2019  ntuser.ini
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ cat Hello,java
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ DDL_DML_Rocp.sql
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Hello,java
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ getting-started/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$  cd
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ ls -a
+ ./
+ ../
+ .angular-config.json
+ .bash_history
+ .config/
+ .docker/
+ .eclipse/
+ .git-for-windows-updater
+ .gitconfig
+ .lemminx/
+ .m2/
+ .pgAdmin4.1057243102.addr
+ .pgAdmin4.1057243102.log
+ .pgAdmin4.startup.log
+ .sonarlint/
+ .ssh/
+ .sts4/
+ .tooling/
+ .viminfo
+ .vscode/
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ DDL_DML_Rocp.sql
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Hello,java
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ getting-started/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ ls -a
+ ./
+ ../
+ .angular-config.json
+ .bash_history
+ .config/
+ .docker/
+ .eclipse/
+ .git-for-windows-updater
+ .gitconfig
+ .lemminx/
+ .m2/
+ .pgAdmin4.1057243102.addr
+ .pgAdmin4.1057243102.log
+ .pgAdmin4.startup.log
+ .sonarlint/
+ .ssh/
+ .sts4/
+ .tooling/
+ .viminfo
+ .vscode/
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ DDL_DML_Rocp.sql
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Hello,java
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ getting-started/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~
+$ cd .ssh
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh
+$ ls
+config  keys/  known_hosts
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh
+$ cd keys/
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh/keys
+$ ls
+PracticeKey.pem  WorkLaptop.pem  desktop.ini  javafskp.pem  testpair.pem
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh/keys
+$ mv C:/Users/TimothyGattie/Downloads/javaFS201130kp.pem javaFS201130.pem
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh/keys
+$ cd ..
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh
+$ cd keys
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh/keys
+$ cd ..
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh
+$ touch config
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh
+$ vi config
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh
+$ cat config
+Host ec2practice
+        hostName ec2-35-173-187-244.compute-1.amazonaws.com
+        IdentityFile ~/.ssh/keys/PracticeKey.pem
+        User ec2-user
+
+Host pipelinepractice
+        HostName ec2-54-90-51-234.compute-1.amazonaws.com
+        IdentityFile ~/.ssh/keys/WorkLaptop.pem
+        User ec2-user
+
+Host javaec2
+        HostName ec2-34-201-169-104.compute-1.amazonaws.com
+        IdentityFile ~/.ssh/keys/javafskp.pem
+        User ec2-user
+
+Host testit
+        HostName 34.226.122.4
+        IdentityFile ~/.ssh/keys/testpair.pem
+        User ec2-user
+
+Host javafsec2
+        HostName ec2-54-158-55-250.compute-1.amazonaws.com
+        IdentityFile ~/.ssh/keys/javaFS201130.pem
+        User ec2-user
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh
+$ cat config
+Host ec2practice
+        hostName ec2-35-173-187-244.compute-1.amazonaws.com
+        IdentityFile ~/.ssh/keys/PracticeKey.pem
+        User ec2-user
+
+Host pipelinepractice
+        HostName ec2-54-90-51-234.compute-1.amazonaws.com
+        IdentityFile ~/.ssh/keys/WorkLaptop.pem
+        User ec2-user
+
+Host javaec2
+        HostName ec2-34-201-169-104.compute-1.amazonaws.com
+        IdentityFile ~/.ssh/keys/javafskp.pem
+        User ec2-user
+
+Host testit
+        HostName 34.226.122.4
+        IdentityFile ~/.ssh/keys/testpair.pem
+        User ec2-user
+
+Host javafsec2
+        HostName ec2-54-158-55-250.compute-1.amazonaws.com
+        IdentityFile ~/.ssh/keys/javaFS201130.pem
+        User ec2-user
+
+AzureAD+TimothyGattie@Rev-LR0BSMBY MINGW64 ~/.ssh
+$ ssh javafsec2
+The authenticity of host 'ec2-54-158-55-250.compute-1.amazonaws.com (54.158.55.250)' can't be established.
+ECDSA key fingerprint is SHA256:++I4uO8ZHt5ZK7waBRFf3CXAG+j+y+xm04cSa22PPVE.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-54-158-55-250.compute-1.amazonaws.com,54.158.55.250' (ECDSA) to the list of known hosts.
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+7 package(s) needed for security, out of 19 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-83-37 ~]$ cd ..
+[ec2-user@ip-172-31-83-37 home]$ cd ..
+[ec2-user@ip-172-31-83-37 /]$ cd
+[ec2-user@ip-172-31-83-37 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-83-37 ~]$ exit
+logout
+Connection to ec2-54-158-55-250.compute-1.amazonaws.com closed.

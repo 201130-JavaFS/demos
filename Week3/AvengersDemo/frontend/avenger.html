@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Secret Shield Database Application</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container" id="fullcontainer">
+      <div class="row" id="login-row">
+        <h3 class="col-lg-12">Please enter your username and password:</h3>
+        <input class="col-sm-4 form-control" id="username" type="text" placeholder="USERNAME">
+        <input class="col-sm-4 form-control" id="password" type="password" placeholder="PASSWORD">
+        <button id="loginbtn" class="btn btn-danger">Login</button>
+    </div>
+
+
+
+      <div class="row" id="table-row">
+        <table class="table table-hover table-bordered" id="avtable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Superhero Name</th>
+              <th>Superhero Power</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Power Level</th>
+              <th>Home Base</th>
+            </tr>
+          </thead>
+          <tbody id="avbody"></tbody>
+        </table>
+      </div>
+      <br />
+      <br />
+      <button id="getAvButton" class="btn btn-success">
+        Avengers Assemble!
+      </button>
+    </div>
+    <script src="avenger.js"></script>
+  </body>
+</html>

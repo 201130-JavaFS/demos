@@ -35,6 +35,6 @@ public class BookDAO {
 		
 		List<Book> list = ses.createQuery("FROM Book").list();
 		
-		return list;
+		return list;		
 	}
 }

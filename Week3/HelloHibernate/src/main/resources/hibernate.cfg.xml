@@ -19,7 +19,7 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<!-- DDL -->
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
 		
 		<!-- We will map our classes here -->
 		<mapping class="com.revature.models.Book"/>

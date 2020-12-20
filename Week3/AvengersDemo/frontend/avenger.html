@@ -15,12 +15,20 @@
     <div class="container" id="fullcontainer">
       <div class="row" id="login-row">
         <h3 class="col-lg-12">Please enter your username and password:</h3>
-        <input class="col-sm-4 form-control" id="username" type="text" placeholder="USERNAME">
-        <input class="col-sm-4 form-control" id="password" type="password" placeholder="PASSWORD">
+        <input
+          class="col-sm-4 form-control"
+          id="username"
+          type="text"
+          placeholder="USERNAME"
+        />
+        <input
+          class="col-sm-4 form-control"
+          id="password"
+          type="password"
+          placeholder="PASSWORD"
+        />
         <button id="loginbtn" class="btn btn-danger">Login</button>
-    </div>
-
-
+      </div>
 
       <div class="row" id="table-row">
         <table class="table table-hover table-bordered" id="avtable">
@@ -43,6 +51,40 @@
       <button id="getAvButton" class="btn btn-success">
         Avengers Assemble!
       </button>
+      <br>
+<br>
+
+        <br>
+        <br>
+
+        <h3>Add Avenger to Database</h3>
+        <div class="row" id="formdiv">
+            <div class="col-4-sm">
+                <label class="label" for="supName">Superhero's Name</label>
+                <input type="text" class="form-control" id="supName">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="supPower">Superhero's Power</label>
+                <input type="text" class="form-control" id="supPower">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="fName">Superhero's Real First Name</label>
+                <input type="text" class="form-control" id="fName">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="lName">Superhero's Real Last Name</label>
+                <input type="text" class="form-control" id="lName">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="pLevel">Superhero's Power Level</label>
+                <input type="number" class="form-control" id="pLevel">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="home">Superhero's Home Base Name</label>
+                <input type="text" class="form-control" id="home">
+            </div>
+        </div>
+        <div class="row" id="formbtn"></div>
     </div>
     <script src="avenger.js"></script>
   </body>

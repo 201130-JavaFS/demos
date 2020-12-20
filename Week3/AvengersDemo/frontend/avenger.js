@@ -22,7 +22,14 @@ async function loginFunc() {
   });
 
   if(resp.status===200){
-    document.getElementById('login-row').innerText="YOU HAVE LOGGED IN";  
+    document.getElementById('login-row').innerText="YOU HAVE LOGGED IN";
+    //add button to submit a new advenger
+    let button2 = document.createElement('button');
+    button2.className = "btn btn-success";
+    button2.id = "addAvBtn";
+    button2.innerText = "Add a Avenger";
+    button2.onclick = AddFunc;
+    document.getElementById("formbtn").appendChild(button2);  
   }else{
     document.getElementById('login-row').innerText="Login failed! Reload the page of the computer will explode!"; 
   }
@@ -78,4 +85,38 @@ async function assembleFunc(){
 
     }
   }
+}
+
+async function AddFunc(){
+
+  let sName = document.getElementById("supName").value;
+  let sPower = document.getElementById("supPower").value;
+  let fName = document.getElementById("fName").value;
+  let lName = document.getElementById("lName").value;
+  let pLevel = document.getElementById("pLevel").value;
+  let home = document.getElementById("home").value;
+
+  let avenger = {
+      supName : sName,
+      supPower : sPower,
+      firstName : fName,
+      lastName : lName,
+      powerLevel : pLevel,
+      homeString : home 
+  }
+
+  console.log(avenger)
+
+  let resp = await fetch(url + "avengers", {
+      method: 'POST',
+      body: JSON.stringify(avenger),
+      credentials: "include"
+  })
+
+  if(resp.status === 201){
+      assembleFunc()
+  } else {
+      document.getElementById("login-row").innerText = "Avenger could not be added.";
+  }
+
 }

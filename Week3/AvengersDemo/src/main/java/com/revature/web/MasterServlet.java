@@ -24,11 +24,28 @@ public class MasterServlet extends HttpServlet {
 		res.setStatus(404);
 
 		final String URI = req.getRequestURI().replace("/AvengersDemo/", "");
+		
+		//split on "/" to determine the portions of the URI
+		String[] portions = URI.split("/");
+		
+		
 
 		switch (URI) {
 		case "avengers":
-			if (req.getSession(false) != null) {
-				ac.getAllAvengers(res);
+			//Make sure logged in
+			if (req.getSession(false) != null && (boolean) req.getSession().getAttribute("loggedin")) {
+				//Check the HTTP verb
+				if (req.getMethod().equals("GET")) {
+					//check if getting 1 or all Avengers
+					if (portions.length == 2) {
+						int id = Integer.parseInt(portions[1]);
+						ac.getAvenger(res, id);
+					} else if (portions.length == 1) {
+						ac.getAllAvengers(res);
+					}
+				} else if (req.getMethod().equals("POST")) {
+					ac.addAvenger(req, res);
+				}
 			} else {
 				res.setStatus(403);
 			}

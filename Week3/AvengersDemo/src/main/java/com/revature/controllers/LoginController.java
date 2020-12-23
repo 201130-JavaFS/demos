@@ -33,7 +33,7 @@ public class LoginController {
 			
 			LoginDTO lDTO = om.readValue(body, LoginDTO.class);
 			
-			if(ls.login(lDTO.username, lDTO.password)) {
+			if(ls.login(lDTO.username, ((Integer) lDTO.password.hashCode()).toString())) {
 				HttpSession ses = req.getSession();
 				
 				ses.setAttribute("user", lDTO);

@@ -1,0 +1,16 @@
+img{
+  width: 7em;
+  height: 7em;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+hr{
+  color: white;
+  
+}

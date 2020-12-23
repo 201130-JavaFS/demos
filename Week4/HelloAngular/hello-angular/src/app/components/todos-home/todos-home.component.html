@@ -1,0 +1,19 @@
+<div *ngIf = "greeterDiv">
+  <label for="yourName">What should we call you? </label>
+  <input type="text" id="yourName" [(ngModel)]="name"/>
+  <button (click)="submitName()">Submit</button>
+</div>
+<br>
+<h2 *ngIf="name">Welcome, {{name}}</h2>
+<br>
+
+<div class="grid-container">
+  <div *ngFor = "let todo of todos" class="todo-card" [hidden]="visibility">
+    <h2>Todo #{{todo.id}}</h2>
+    <p>{{todo.content}}</p>
+    <p>Status: {{todo.status}}</p>
+    <label for="updateBox{{todo.id}}">Update Task:</label>
+    <input id="updateBox{{todo.id}}" [(ngModel)]="todo.content"/>
+  </div>
+</div>
+<button (click)="toggleVisibility()">See your todo list</button>

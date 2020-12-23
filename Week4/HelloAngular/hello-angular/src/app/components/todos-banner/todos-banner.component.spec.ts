@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AnotherComponentComponent } from './another-component.component';
+import { TodosBannerComponent } from './todos-banner.component';
 
-describe('AnotherComponentComponent', () => {
-  let component: AnotherComponentComponent;
-  let fixture: ComponentFixture<AnotherComponentComponent>;
+describe('TodosBannerComponent', () => {
+  let component: TodosBannerComponent;
+  let fixture: ComponentFixture<TodosBannerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AnotherComponentComponent ]
+      declarations: [ TodosBannerComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AnotherComponentComponent);
+    fixture = TestBed.createComponent(TodosBannerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

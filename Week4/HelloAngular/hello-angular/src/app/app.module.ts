@@ -1,20 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NewComponentComponent } from './components/new-component/new-component.component';
-import { AnotherComponentComponent } from './components/another-component/another-component.component';
+import { TodosBannerComponent } from './components/todos-banner/todos-banner.component';
+import { TodosHomeComponent } from './components/todos-home/todos-home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewComponentComponent,
-    AnotherComponentComponent
+    TodosBannerComponent,
+    TodosHomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

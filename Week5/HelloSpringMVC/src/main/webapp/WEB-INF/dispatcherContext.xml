@@ -12,7 +12,13 @@
 	<mvc:default-servlet-handler/>
 	
 	<!-- We can also set up the view resolver here -->
+	
+	<mvc:resources location="/static/" mapping="/static/**"></mvc:resources>
 
+	<bean name="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/static/"></property>
+		<property name="suffix" value=".html"></property>
+	</bean>
 </beans>
     
     

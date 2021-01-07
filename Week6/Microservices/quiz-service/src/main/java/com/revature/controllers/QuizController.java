@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
+import com.revature.clients.FlashcardClient;
 import com.revature.models.Flashcard;
 import com.revature.models.Quiz;
 import com.revature.repositories.QuizRepository;
@@ -25,14 +23,8 @@ public class QuizController {
 	@Autowired
 	private QuizRepository quizDao;
 	
-	@Bean
-	@LoadBalanced
-	RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
-	
 	@Autowired
-	private RestTemplate restTemplate;
+	private FlashcardClient flashcardClient;
 	
 	@GetMapping
 	public ResponseEntity<List<Quiz>> findAll() {
@@ -71,12 +63,19 @@ public class QuizController {
 	@GetMapping("/cards")
 	@SuppressWarnings(value = { "all" })
 	public ResponseEntity<List<Flashcard>> getCards() {
-		List<Flashcard> all = this.restTemplate.getForObject("http://flashcard", List.class);
+		List<Flashcard> all = this.flashcardClient.findAll();
 		
 		if(all.isEmpty()) {
 			return ResponseEntity.noContent().build();
 		}
 		
 		return ResponseEntity.ok(all);
+	}
+	
+	@GetMapping("/load")
+	public ResponseEntity<String> retrievePort(){
+		String info = this.flashcardClient.retrievePort();
+		
+		return ResponseEntity.ok(info);
 	}
 }

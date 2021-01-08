@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,6 +27,9 @@ public class QuizController {
 	
 	@Autowired
 	private FlashcardClient flashcardClient;
+	
+	@Autowired
+	private CircuitBreakerFactory<?, ?> cbFactory;
 	
 	@GetMapping
 	public ResponseEntity<List<Quiz>> findAll() {
@@ -63,6 +68,7 @@ public class QuizController {
 	@GetMapping("/cards")
 	@SuppressWarnings(value = { "all" })
 	public ResponseEntity<List<Flashcard>> getCards() {
+		return cbFactory.create("flashcard-cards").run(() -> {
 		List<Flashcard> all = this.flashcardClient.findAll();
 		
 		if(all.isEmpty()) {
@@ -70,8 +76,13 @@ public class QuizController {
 		}
 		
 		return ResponseEntity.ok(all);
+		}, throwable -> getCardsFallback());
 	}
 	
+	private ResponseEntity<List<Flashcard>> getCardsFallback() {
+		return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).build();
+	}
+
 	@GetMapping("/load")
 	public ResponseEntity<String> retrievePort(){
 		String info = this.flashcardClient.retrievePort();

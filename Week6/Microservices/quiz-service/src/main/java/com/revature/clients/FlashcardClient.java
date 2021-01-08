@@ -10,7 +10,7 @@ import com.revature.models.Flashcard;
 @FeignClient(name="flashcard")
 public interface FlashcardClient {
 	
-	@GetMapping
+	@GetMapping()
 	public List<Flashcard> findAll();
 	
 	@GetMapping("/port")
